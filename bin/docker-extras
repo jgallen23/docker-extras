@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+VERSION="0.0.2"
+INSTALL_SCRIPT="https://raw.githubusercontent.com/jgallen23/docker-extras/master/install.sh"
+
+update() {
+  local bin=$(which docker-extras)
+  local prefix=${bin%/*/*}
+  local orig=$PWD
+
+  curl -s $INSTALL_SCRIPT | PREFIX="$prefix" bash /dev/stdin \
+    && cd "$orig" \
+    && echo "... updated docker-extras $VERSION -> $(docker extras --version)"
+}
+
+case "$1" in
+  -v|--version)
+    echo $VERSION && exit 0
+    ;;
+  update)
+    update
+    ;;
+esac
