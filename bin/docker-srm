@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CONTAINER=$1
+
+if [[ -z "$CONTAINER" ]]; then
+  echo "Pass in container"
+  exit
+fi
+
+docker stop $CONTAINER && docker rm $CONTAINER
