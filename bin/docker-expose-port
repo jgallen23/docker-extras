@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CONTAINER=$1
+PORT=$2
+IP=$(docker-ip $CONTAINER)
+iptables -t nat -A DOCKER -p tcp --dport $PORT -j DNAT --to-destination $IP:$PORT
