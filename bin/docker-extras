@@ -10,7 +10,7 @@ update() {
 
   curl -s $INSTALL_SCRIPT | PREFIX="$prefix" bash /dev/stdin \
     && cd "$orig" \
-    && echo "... updated docker-extras $VERSION -> $(docker extras --version)"
+    && echo "... updated docker-extras $VERSION -> $(docker-extras --version)"
 }
 
 case "$1" in
