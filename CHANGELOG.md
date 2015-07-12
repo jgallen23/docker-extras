@@ -1,4 +1,11 @@
 
+0.0.7 / 2015-07-12
+==================
+
+  * added docker-enter. fixes #12
+  * added docker-rmi-grep. fixes #10
+  * renamed grep-stop to stop-grep.  fixes #11
+
 0.0.6 / 2015-07-07
 ==================
 
