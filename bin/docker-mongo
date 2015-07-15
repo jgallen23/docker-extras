@@ -1,0 +1,8 @@
+#!/bin/bash
+
+NAME="mongo"
+if [[ -n "$1" ]]; then
+  NAME=$1
+fi
+
+docker run -it --link $NAME:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
