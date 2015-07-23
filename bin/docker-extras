@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION="0.0.8"
+VERSION="0.0.9"
 INSTALL_SCRIPT="https://raw.githubusercontent.com/jgallen23/docker-extras/master/install.sh"
 
 update() {
