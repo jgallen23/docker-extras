@@ -1,4 +1,11 @@
 
+0.0.10 / 2015-11-17
+==================
+
+  * added rm-grep script to remove containers based on a search
+  * better rm-stopped script
+  * better clean images script
+
 0.0.9 / 2015-07-23
 ==================
 
