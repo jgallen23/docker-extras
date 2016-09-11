@@ -1,4 +1,12 @@
 
+0.1.0 / 2016-09-11
+==================
+
+  * added confirmation to docker-rm-stopped
+  * added confirmation to rm-grep
+  * updated docker-rm-except to store results in a variable
+  * added docker-rm-except to remove everything regex
+
 0.0.12 / 2015-11-30
 ==================
 
